@@ -1,0 +1,484 @@
+@media screen and (max-width: 1199px) {
+    .header__item {
+        padding: 0 10px 0px;
+    }
+
+    .home__top {
+        flex-direction: column;
+    }
+
+    .home__img img {
+        max-width: 450px;
+    }
+
+    .social {
+        padding-bottom: 80px;
+    }
+
+    .social__item {
+        flex-basis: 220px;
+        max-width: 220px;
+        margin-right: 35px;
+    }
+
+    .text01 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .сertified {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .form__footer {
+        padding: 50px 80px 40px 60px;
+        max-width: 560px;
+    }
+
+    .footer__top .form__control {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header__logo {
+        padding: 14.75px 0;
+    }
+
+    .header__logoimg {
+        width: 94px;
+    }
+
+    .header__function {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .burger-menu__button {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav.is-active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: #FFC709;
+    }
+
+    .header__list-nav {
+        margin: 0 auto;
+        padding-top: 95px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header__item {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .header__link {
+        font-family: "Work Sans", sans-serif;
+        font-size: 22px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+        color: #fff;
+        width: 100%;
+    }
+
+    .header__link:hover,
+    .header__link:active {
+        color: #202020;
+    }
+
+    .header__link:hover::before, .header__link:focus::before, .header__link:active::before {
+        display: none;
+    }
+
+    .header__function .header__btn {
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .home__baner {
+        margin-top: 60px;
+        min-height: 450px;
+    }
+
+    .caption__wrap {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .caption {
+        position: relative;
+        top: 0px;
+        transform: translate(0%, 0%);
+    }
+
+    .caption__text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .home__img {
+        margin-left: 180px;
+    }
+
+    .caption__title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .caption__title span {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .services {
+        padding-bottom: 40px;
+        padding-top: 70px;
+    }
+
+    .social {
+        padding-bottom: 20px;
+    }
+
+    .social__item {
+        flex-basis: 195px;
+        max-width: 195px;
+        margin-right: 15px;
+    }
+
+    .text01 {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .text01 .text01__img {
+        margin-right: 40px;
+    }
+
+    .text01 .text01__img img {
+        max-width: 290px;
+    }
+
+    .сertified .title {
+        margin-bottom: 50px;
+    }
+
+    .сertified .сertified__logos {
+        margin: 0 auto;
+    }
+
+    .expertise__item {
+        width: 100%;
+    }
+
+    .expertise__item:nth-child(1), .expertise__item:nth-child(2), .expertise__item:nth-child(3) {
+        margin-bottom: 40px;
+    }
+
+    .expertise__item:nth-child(4) {
+        margin-bottom: 0px;
+    }
+
+    .contacts p {
+        margin-bottom: 160px;
+    }
+
+    .form__footer {
+        padding: 50px 50px 40px 40px;
+        max-width: 450px;
+    }
+
+    .form__box {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__img__pc {
+        display: none;
+    }
+
+    .home__img__mobile {
+        display: block;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .caption__wrap {
+        flex-direction: column-reverse;
+    }
+
+    .home__baner {
+        padding-bottom: 60px;
+    }
+
+    .home__img {
+        margin-left: auto;
+    }
+
+    .caption__title {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    .caption__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .services .description {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .social__item:nth-child(1), .social__item:nth-child(2), .social__item:nth-child(3), .social__item:nth-child(4), .social__item:nth-child(5), .social__item:nth-child(6) {
+        background-image: none;
+    }
+
+    .social__item {
+        flex-basis: auto;
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        width: 50%;
+        height: 80px;
+    }
+
+    .social__item h4 {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .services .description {
+        margin-bottom: 40px;
+    }
+
+    .text01 {
+        padding-top: 30px;
+    }
+
+    .text01 .row {
+        flex-wrap: wrap;
+    }
+
+    .text01 .text01__img {
+        margin: 0 auto 20px;
+    }
+
+    .text01 .text01__content .description {
+        margin-bottom: 0px;
+    }
+
+    .process {
+        padding-top: 40px;
+    }
+    .process__item {
+        max-width: calc(100vw - 40px);
+    }
+
+    .сertified {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .сertified .title {
+        margin: 0 auto 50px;
+    }
+    .сertified .сertified__logos img {
+        width: 450px;
+    }
+
+    .expertise {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .expertise .title {
+        margin-bottom: 40px;
+    }
+
+    .expertise__item:before {
+        top: 5px;
+    }
+
+    .form__footer {
+        position: static;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contacts {
+        padding-bottom: 60px;
+    }
+
+    .contacts .row {
+        flex-direction: column-reverse;
+    }
+
+    .contacts .footer__logo img {
+        margin-bottom: 40px;
+    }
+
+    .contacts p {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header__logo {
+        padding-left: 20px;
+    }
+
+    .home__baner {
+        background-position: top 100% center;
+        min-height: 460px;
+    }
+
+    .caption__title {
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: -25px;
+    }
+
+    .caption__text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services .description {
+        padding: 0 10px;
+    }
+
+    .social {
+        padding-bottom: 0px;
+    }
+
+    .social__item {
+        flex-basis: 48%;
+        max-width: calc(100vw - 100px);
+        margin-right: 0px;
+    }
+
+    .text01 {
+        padding-top: 10px;
+    }
+
+    .contacts {
+        padding: 60px 0px 0;
+    }
+
+    .social__list {
+        padding: 0 20px;
+    }
+
+    .text01 {
+        padding: 10px 20px 70px;
+    }
+
+    .process {
+        padding: 40px 20px 90px;
+    }
+
+    .process__list {
+        margin-bottom: 0px;
+    }
+
+    .process__item .description {
+        margin-bottom: 0px;
+        width: calc(100vw - 40px);
+    }
+
+    .сertified {
+        padding: 70px 25px;
+    }
+
+    .сertified .title:before {
+        width: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .сertified .сertified__logos img {
+        width: 100%;
+    }
+
+    .expertise {
+        padding: 40px 20px 60px;
+    }
+
+    .footer {
+        padding: 0 20px;
+    }
+
+    .form__footer {
+        padding: 60px 20px 60px 20px;
+    }
+
+    .contacts {
+        padding: 0 0 60px;
+    }
+
+    .contacts p {
+        padding: 0 20px;
+    }
+
+    .contacts .footer__description {
+        padding: 0 20px;
+        display: block;
+    }
+
+    .contacts .btn {
+        width: 100%;
+    }
+
+    .footer__logo {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__logo {
+        padding-left: 5px;
+    }
+
+    .burger-menu {
+        right: 5px;
+    }
+
+    .header__function {
+        margin-right: 60px;
+    }
+}
