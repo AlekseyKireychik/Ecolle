@@ -1,6 +1,17 @@
 $(document).ready(function () {
-    $(".header__link, .header__btn, .caption__btn").on("click", function (event) {
-        event.preventDefault();
+
+    if ($(document).scrollTop() > $(".fixed-top").height()) {
+        $(".fixed-top").toggleClass("scrolled");
+    }
+
+    $(window).on("scroll", function() {
+        $(".container__header").toggleClass(
+        "scrolled",
+        $(this).scrollTop() > $(".container__header").height()
+        );
+    });
+
+    $(".header__link").on("click", function (event) {
         let id = $(this).attr("href"),
             top = $(id).offset().top - 50;
         $("body,html").animate({scrollTop: top}, 500);
@@ -15,23 +26,28 @@ $(document).ready(function () {
         $(".header__top").toggleClass("is-active");
         $("body").toggleClass("is-active");
     });
-
-    if ($(window).width() < 991) {
-        $(".slider01").slick({
-            dots: true,
-            arrows: false,
-            speed: 400,
-            infinite: true,
-            slidesToScroll: 1,
-            slidesToShow: 1,
-            focusOnSelect: true,
-            variableWidth: true,
+    $(".caption__btn").on("click", function () {
+        $(".popup__login").addClass("is-active"); 
+        $(".popup__owerlay").addClass("is-active");       
+        $(".btn__close").on("click", function () {
+            $(".popup__login").removeClass("is-active"); 
+            $(".popup__registration").removeClass("is-active"); 
+            $(".popup__owerlay").removeClass("is-active");       
         });
-    }
-    ;
+        $(".popup__owerlay").on("click", function () {
+            $(".popup__login").removeClass("is-active"); 
+            $(".popup__registration").removeClass("is-active"); 
+            $(this).removeClass("is-active");       
+        });
+        $(".login__link").on("click", function () {
+            $(".popup__login").removeClass("is-active"); 
+            $(".popup__registration").addClass("is-active");
+        });
+        
+    });
 
     $.extend($.validator.messages, {
-        required: "required"
+        required: ""
     });
 
     $("#form__footer").validate({

@@ -7,15 +7,15 @@ if (empty($result['error'])) {
     $mes = protection($_POST['mes']);
     $to .= "ttttt@ttttt.by";
 
-    $subject = 'Ecolle';
+    $subject = 'UI Leads';
 
     $message = '
         <html>
             <head>
-                <title>Notice from the site Ecolle</title>
+                <title>Notice from the site UI Leads</title>
             </head>
             <body>
-                <h3>Notice from the site Ecolle</h3>
+                <h3>Notice from the site UI Leads</h3>
                 <p><b>Имя:</b> ' . $name . '</p>
                 <p><b>Email:</b> ' . $email . '</p>
                 <p><b>Сообщение:</b> ' . $mes . '</p>
